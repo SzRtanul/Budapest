@@ -1,0 +1,46 @@
+A CSATA
+Logika:
+if(VanEllenfel())
+    HL.harc();
+
+ELL{
+    Ügyesség = rnd
+    Életerő = rnd
+}
+ÉN{
+    Ügyesség = rnd
+    Életerő = rnd
+    Szerencse = rnd
+}
+
+terTamad = ELL.Ügyesseg + kockadobas(2);
+énTamad = ÉN.Ügyesseg + kockadobas(2);
+
+Szerencse = rnd;
+
+while(mindenkkiÉl && menekul){
+    if(énTamad != terTamad){
+        if(énTamad > terTamad){
+            ELL.Életerő -= 2;
+            if(szerencse){
+                if(szerencsésvagy){
+                    ELL.Életerő -= 2;
+                }
+                else{
+                    ELL.Életerő += 1;
+                }
+            }
+        }
+        else{
+            ÉN.Életerő -= 2;
+            if(szerencse){
+                if(szerencsésvagy){
+                    ELL.Életerő += 1;
+                }
+                else{
+                    ELL.Életerő -= 1;
+                }
+            }
+        }
+    }
+}
