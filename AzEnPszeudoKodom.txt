@@ -2,11 +2,17 @@ publikus = public
 statikus = static
 eljárás = void
 
-Egész = int
-Dupla = double
-Lebegő = float
+egész = int
+hosszú = long
+rövid = short
+bájt = byte
+dupla = double
+lebegő = float
+Szöveg = String
+logikai = boolean
 vagy = ||
 nem = !
+és = &&
 
 
 publikus statikus eljárás BMIszamitas(){
