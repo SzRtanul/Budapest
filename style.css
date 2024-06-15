@@ -1,15 +1,32 @@
+
 nav{
     font-weight: bold;
 }
-nav ul{
-    display: inline;
-    list-style: none;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline-block;
+    padding: 5px;
+}
+li.jobb{
+    float: right;
 }
 
+a:visited, a:link, a{
+    color: #456280;
+    text-decoration: none;
+}
+a:hover{
+    color: #375472;
+}
 body{
     background-image: url("kepek/v3.jpg");
     color: #456280;
 }
+
 .oldal{
     background-color: #cfc6b5;
     border: 1px solid #506a85;
@@ -21,8 +38,9 @@ body{
 }
 .kepek{
     display: grid;
-    gap: 5px;
+    gap: 15px;
     padding: 5px;
+    margin: 20px;
     grid-template-areas:  
     "k1 k2"
     "k3 k4";
@@ -45,6 +63,32 @@ footer{
     color: #f3efe9;
     text-align: center;
     padding: 10px;
+}
+.jobb{
+    float: right;
+}
+
+.bal{
+    float: left;
+}
+
+.pad{
+    margin: 0px 407px 0px 0px;
+}
+
+textarea{
+    min-width: 75%;
+    min-height: 80px;
+}
+
+.d-block{
+    display: block;
+}
+
+#viragkep{
+    margin: 6px;
+    min-height: 360px;
+    height: 24em
 }
 
 /*Mobilnézet*/

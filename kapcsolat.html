@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Háziállatok">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Szabó Roland">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Szabó Roland - Háziállatok</title>
+</head>
+<body>
+   <div class = "oldal">
+    <nav>
+        <ul>
+            <li><a href="index.html">Kezdőlap</a></li>
+            <li><a href="">Munkáim</a></li>
+            <li><a href="">Hobbijaim</a></li>
+            <li><a href="kapcsolat.html">Kapcsolat</a></li>
+            <li class="jobb"> 
+                <form class="example" action="#">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <img id="viragkep" src="kepek/virag.jpg" class="d-block bal" alt="">
+        <form action="">
+            <fieldset>
+                <legend>Adataid</legend>
+                <p><label for="u1">Név:</label><input name="nev" type="text" id="u1"></p>
+                <p><label for="u2">E-mail:</label><input name="email" type="text" id="u2"></p>
+                <p><label for="u3">Kor:</label><select name="kor" id="u3">
+                    <option value="15">15 vagy kevesebb</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                </select></p>
+            </fieldset>
+            <fieldset>
+                <legend>Értékelés</legend>
+                <p class="jobb pad"><label for="NT">Nagyon tetszik</label><input id="NT" name="tetszik" type="radio"></p>
+                <p class="jobb pad"><label for="T">Tetszik</label><input id="T" name="tetszik" type="radio"></p>
+                <p class="jobb pad"><label for="NmT">Nem tetszik</label><input id="NmT" name="tetszik" type="radio"></p>
+                <p class="jobb pad"><label for="NNmT">Nagyon nem tetszik</label><input id="NNmT" name="tetszik" type="radio"></p>
+            </fieldset>
+            <fieldset>
+                <legend>Megjegyzés</legend>
+                <textarea name="megjegyzes">
+
+                </textarea>
+            </fieldset>
+        </form>
+    </main>
+    <footer>@ Minden jog fenntartva!</footer>
+   </div>
+</body>
+</html>

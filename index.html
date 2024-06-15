@@ -6,6 +6,7 @@
     <meta name="keywords" content="HTML, CSS">
     <meta name="author" content="Szabó Roland">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Szabó Roland - Háziállatok</title>
 </head>
@@ -13,11 +14,16 @@
    <div class = "oldal">
     <nav>
         <ul>
-            <li>Kezdőlap</li>
-            <li>Munkáim</li>
-            <li>Hobbijaim</li>
-            <li>Kapcsolat</li>
-            <li> <input type="search" name="" id=""><button></button></li>
+            <li><a href="index.html">Kezdőlap</a></li>
+            <li><a href="">Munkáim</a></li>
+            <li><a href="">Hobbijaim</a></li>
+            <li><a href="kapcsolat.html">Kapcsolat</a></li>
+            <li class="jobb"> 
+                <form class="example" action="#">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </li>
         </ul>
     </nav>
     <main>
@@ -59,10 +65,6 @@
                     <td>Labda, labda, labda, labda</td>
                 </tr>
             </table>
-        </div>
-
-        <div id="r3">
-            
         </div>
     </main>
     <footer>@ Minden jog fenntartva!</footer>
