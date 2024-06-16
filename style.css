@@ -92,6 +92,15 @@ textarea{
 }
 
 /*Mobilnézet*/
-@media screen {
-    
+@media screen and (max-width: 600px){
+    #viragkep{
+        display: none;
+    }
+
+    main{
+        display: grid;
+        grid-template-areas:
+        "r2"
+        "r1";
+    }
 }
