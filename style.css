@@ -1,7 +1,28 @@
+:root{
+    --szvgkk: #456280;
+    --httrkk: #506a85;
+    --vilgoskk: #7893ae;
+    --httrkrem: #cfc6b5;
+    --vilgoskrm: #dad5ca;
+    --fehreskrm: #f3efe9;
+}
+
+body{
+    font-family: sans-serif;
+}
 
 nav{
     font-weight: bold;
 }
+
+header{
+    height: 120px;
+    text-align: center;  
+    color: var(--fehreskrm);
+    background-color: var(--szvgkk);
+    font-size: 32px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -9,14 +30,14 @@ ul {
 }
 li {
     display: inline-block;
-    padding: 5px;
+    padding: 14px 16px;
 }
 li.jobb{
     float: right;
 }
 
 a:visited, a:link, a{
-    color: #456280;
+    color: var(--szvgkk);
     text-decoration: none;
 }
 a:hover{
@@ -24,18 +45,20 @@ a:hover{
 }
 body{
     background-image: url("kepek/v3.jpg");
-    color: #456280;
+    color: var(--szvgkk);
 }
 
 .oldal{
+    overflow: auto;
     background-color: #cfc6b5;
-    border: 1px solid #506a85;
-    border-top: 60px solid #506a85;
+    border: 1px solid var(--httrkk);
+    border-top: 80px solid var(--szvgkk);
     width: 90%;
     margin: 0px auto auto auto;
     padding: 0px auto auto auto;
 
 }
+
 .kepek{
     display: grid;
     gap: 15px;
@@ -47,20 +70,22 @@ body{
 }
 
 .kep{
-    border: 5px solid #506a85;
+    border: 5px solid var(--httrkk);
+    min-width: 100px;
     width: calc(100% - 5px - 5px);
 }
 
-main{
+main.index{
     display: grid;
     grid-template-areas: 
-    "r1 r2";
+    "r1 r2"
+    "r1 sz";
     
 }
 
 footer{
-    background-color: #506a85;
-    color: #f3efe9;
+    background-color: var(--httrkk);
+    color: var(--fehreskrm);
     text-align: center;
     padding: 10px;
 }
@@ -72,10 +97,6 @@ footer{
     float: left;
 }
 
-.pad{
-    margin: 0px 407px 0px 0px;
-}
-
 textarea{
     min-width: 75%;
     min-height: 80px;
@@ -85,22 +106,164 @@ textarea{
     display: block;
 }
 
+table{
+    width: 100%;
+    margin: 13px;
+}
+
+table > tr{
+    background-color: var(--fehreskrm);
+}
+
+table, table *{
+    border: 1px solid var(--szvgkk);
+    border-collapse: collapse;
+}
+
+table tr *{
+    padding: 4px 13px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table > tr.sotet{
+    background-color: var(--httrkrem);
+}
+
+table th{
+    background-color: var(--httrkk);
+    color: var(--fehreskrm);
+}
+
+#r1{
+    grid-area: r1;
+}
+
+#r2{
+    grid-area: r2;
+}
+h1{
+    width: 100%;
+    margin: 13px;
+    margin-top: 65px;
+    text-align: center;
+}
+p{
+    margin: 13px;
+    grid-area: sz;
+}
+
+form{
+    padding: 0px;
+    text-align: center;
+}
+
+#searchbox, #searchbutton{
+    float: left;
+    margin: 0;
+    height: 20px;
+}
+
+#searchbox{
+    border-radius: 5px;
+    background-color: var(--vilgoskrm);
+    width: 50%;
+    margin-right: 0px;
+}
+
+#searchbutton{
+    background-color: var(--szvgkk);
+    width: 30%;
+    margin-left: 0px;
+    height: 25px;
+}
+
+.ertekeles{
+    text-align: right;
+}
+
+.radio-button{
+    width: calc(60%);
+    margin: auto;
+    margin-left: 0px;
+}
+
+.fa-search{
+    filter: invert(1);
+}
+
+.mezok{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /*align-items: center;*/
+    gap: 10px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.mezok *{
+    margin: 4px auto;
+    margin-left: 0px;
+}
+
+.mezok *:not(label){
+    border: 1px solid var(--szvgkk);
+}
+
+.mezok label{
+    margin: auto;
+    margin-right: 10px;
+}
+
+.kapcsolat{
+    font-weight: bold;
+}
+
+fieldset, legend{
+    border: 1px solid black;
+}
+
+fieldset{
+    margin: 13px;
+    border-radius: 5px;
+}
+
+legend{
+    margin:0 auto;
+    padding: 10px 4px;
+    border-radius: 9px;
+}
+
+#viragkep, .mezoform, .footkapcs{
+    float: left;
+}
+
 #viragkep{
-    margin: 6px;
-    min-height: 360px;
-    height: 24em
+    margin: 13px;
+    max-width: calc(20% - 26px);
+    height: 30em;
+}
+
+.mezoform{
+    width: 80%;
+}
+
+.footkapcs{
+    width: 100%;
 }
 
 /*Mobilnézet*/
-@media screen and (max-width: 600px){
+@media screen and (max-width: 790px){
     #viragkep{
         display: none;
     }
 
-    main{
+    main.index{
         display: grid;
         grid-template-areas:
         "r2"
-        "r1";
+        "r1"
+        "sz";
     }
 }

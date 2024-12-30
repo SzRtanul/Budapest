@@ -12,6 +12,9 @@
 </head>
 <body>
    <div class = "oldal">
+    <header>
+        Mindenféle
+    </header>
     <nav>
         <ul>
             <li><a href="index.html">Kezdőlap</a></li>
@@ -20,20 +23,21 @@
             <li><a href="kapcsolat.html">Kapcsolat</a></li>
             <li class="jobb"> 
                 <form class="example" action="#">
-                    <input type="text" placeholder="Search.." name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <input id="searchbox" type="text" placeholder="Search..." name="search">
+                    <button id="searchbutton" type="submit"><i class="fa fa-search"></i></button>
               </form>
             </li>
         </ul>
     </nav>
-    <main>
-        <img id="viragkep" src="kepek/virag.jpg" class="d-block bal" alt="">
-        <form action="">
+    <main class="kapcsolat">
+        <h1>Kapcsolat</h1>
+        <img id="viragkep" src="kepek/virag.jpg" class="" alt="">
+        <form class="mezoform" action="#">
             <fieldset>
                 <legend>Adataid</legend>
-                <p><label for="u1">Név:</label><input name="nev" type="text" id="u1"></p>
-                <p><label for="u2">E-mail:</label><input name="email" type="text" id="u2"></p>
-                <p><label for="u3">Kor:</label><select name="kor" id="u3">
+                <p class="mezok"><label for="u1">Név:</label><input name="nev" type="text" id="u1"></p>
+                <p class="mezok"><label for="u2">E-mail:</label><input name="email" type="text" id="u2"></p>
+                <p class="mezok"><label for="u3">Kor:</label><select name="kor" id="u3">
                     <option value="15">15 vagy kevesebb</option>
                     <option value="16">16</option>
                     <option value="17">17</option>
@@ -42,12 +46,12 @@
                     <option value="20">20</option>
                 </select></p>
             </fieldset>
-            <fieldset>
+            <fieldset class="ertekeles">
                 <legend>Értékelés</legend>
-                <p class="jobb pad"><label for="NT">Nagyon tetszik</label><input id="NT" name="tetszik" type="radio"></p>
-                <p class="jobb pad"><label for="T">Tetszik</label><input id="T" name="tetszik" type="radio"></p>
-                <p class="jobb pad"><label for="NmT">Nem tetszik</label><input id="NmT" name="tetszik" type="radio"></p>
-                <p class="jobb pad"><label for="NNmT">Nagyon nem tetszik</label><input id="NNmT" name="tetszik" type="radio"></p>
+                <p class="radio-button"><label for="NT">Nagyon tetszik</label><input id="NT" name="tetszik" type="radio"></p>
+                <p class="radio-button"><label for="T">Tetszik</label><input id="T" name="tetszik" type="radio"></p>
+                <p class="radio-button"><label for="NmT">Nem tetszik</label><input id="NmT" name="tetszik" type="radio"></p>
+                <p class="radio-button"><label for="NNmT">Nagyon nem tetszik</label><input id="NNmT" name="tetszik" type="radio"></p>
             </fieldset>
             <fieldset>
                 <legend>Megjegyzés</legend>
@@ -55,9 +59,10 @@
 
                 </textarea>
             </fieldset>
+            <input type="submit" value="Küldés">
         </form>
     </main>
-    <footer>@ Minden jog fenntartva!</footer>
+    <footer class="footkapcs">@ Minden jog fenntartva!</footer>
    </div>
 </body>
 </html>
